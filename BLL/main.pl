@@ -1,8 +1,6 @@
 #!"C:\xampp\perl\bin\perl.exe"
 #!"\usr\bin\perl.exe"
-##
-##  apex-test -- Test CGI program which manages appointments
-##
+
 BEGIN {
     push @INC, "../MODEL","../DAL";
 }
@@ -13,7 +11,7 @@ use CGI;
 use DBContext;
 use JSON;
 my $deriver = "SQLite";
-my $dbname = "../DataBase/At&t.db";
+my $dbname = "../DataBase/ApexTest.db";
 my $user = "";
 my $password = "";
 my $db = new DBContext($deriver,$dbname,$user,$password);
